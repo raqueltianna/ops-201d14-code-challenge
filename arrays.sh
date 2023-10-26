@@ -5,6 +5,7 @@
 # Date of latest revision:          10/26/2023
 # Purpose:                          Create an array using four directories
 # Execution:                        bash arrays.sh or ./arrays.sh chmod -x arrays.sh
+# Additional Sources:               https://chat.openai.com/c/9cd29f2e-4795-4e87-8617-c361dac02d58
 
 # Decleration of the variables
 

@@ -4,7 +4,7 @@
 # Script Name:                          loops.sh
 # Author name:                          Tianna Farrow
 # Date of latest revision:              10/27/2023
-# Purpose:                              loop variables / and functions
+# Purpose:                              Loop pid information
 # Execution:                            bash loops.sh or ./loops.sh chmod -x loops.sh
 # Additional resources:                 https://www.quora.com/How-do-you-make-a-shell-script-run-continuously; https://www.linuxquestions.org/questions/programming-9/how-to-make-a-while-loop-iterate-over-script-until-user-input-stops-4175624869/
 
@@ -28,6 +28,11 @@ while true; do
         fi
     else
         echo "No process found with PID $pid."
+    fi
+
+    read -p "Do you want to kill another process? (yes/no): " continue
+    if [[ "$continue" != "yes" ]]; then
+        break
     fi
 done
 

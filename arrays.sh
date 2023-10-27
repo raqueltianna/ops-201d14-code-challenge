@@ -11,8 +11,9 @@
 
 dirs=("dir1" "dir2" "dir3" "dir4")
 
-for dir in "${dirs[a]}"; do
-    touch "$dirs/newfile.txt"
+for dir in "${dirs[@]}"; do
+    mkdir $dir 
+    touch "$dir/newfile.txt"
 done
 
 # Decleration of functions

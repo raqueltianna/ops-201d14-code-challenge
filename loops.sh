@@ -33,7 +33,7 @@ while true; do
     read -p "Do you want to kill another process? (yes/no): " continue
     if [[ "$continue" != "yes" ]]; then
         break
-    fi
+   fi
 done
 
 

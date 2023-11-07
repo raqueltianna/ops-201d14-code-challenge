@@ -1,8 +1,9 @@
-# Script Name:                      automatedendpointconfiguration.bat
-# Author Name:                      Tianna Farrow
-# Date of latest revision:          11/6/2023
-# Purpose:                          Create a powershell script that automates the configuration of a new Windows 10 endpoint
-# Additional Sources:               https://github.com/superswan/Powershell-SysAdmin; https://www.appsloveworld.com/powershell/100/105/file-and-printer-sharing-status
+# Script Name:                                  automatedendpointconfiguration.bat
+# Author Name:                                  Tianna Farrow
+# Date of latest revision:                      11/6/2023
+# Purpose:                                      Create a powershell script that automates the configuration of a new Windows 10 endpoint
+# Additional Sources:                           https://github.com/superswan/Powershell-SysAdmin; https://www.appsloveworld.com/powershell/100/105/file-and-printer-sharing-status
+# Google Drive for Second Part of Lab:          https://docs.google.com/document/d/1H4ChmneGYcSVtjHadLX4ZdUNQIzq1S0gmqmg8574TB8/edit?usp=sharing    
 
 # Decleration of Variables
 

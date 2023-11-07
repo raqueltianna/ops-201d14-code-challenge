@@ -4,6 +4,8 @@
 # Purpose:                                   Creating a set of Powershell commands that are useful in regards to the System event logs 
 # Additional resources:                      https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1; https://www.pdq.com/powershell/get-eventlog/; https://superuser.com/questions/1448419/get-list-all-windows-event-log-events-in-the-last-n-minutes-in-powershell; https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/?view=powershell-5.1
 
+
+
 Get-WinEvent -Logname "System" -MaxEvents 0 | Where-Object { $_.TimeCreated -ge (Get-Date).AddHours(-24) } | Format-List -Property * | Out-File "$env:USERPROFILE\Desktop\last_24.txt"
 # The above line outputs all events from the system within the last 24 hours and creates the file "last_24.txt"
 
